@@ -8,14 +8,20 @@ Most Recent Revision: 1/3/2020
 <html lang="en">
 	<head>
 		<title>Jonathan Dohrer's Portfolio</title>
+		<link href="teststyles.css" rel="stylesheet" type="text/css" />
+		<style>
+			header {
+				background-color: darkgray;
+			}
+		</style>
 	</head>
 	<body>
 		<header>
 			<h1>Portfolio for Jonathan Dohrer</h1>
 		</header>
 	  
-		<nav>
-			<hr />
+		<nav class="border">
+			<hr style="border: thin dotted red;" />
 			<p><a href="index.html">Index</a></p>
 			<p><a href="projects.html">Projects</a></p>
 			<p><a href="contact.html">Contact</a></p>
@@ -25,11 +31,11 @@ Most Recent Revision: 1/3/2020
 			<p><a href="#about">About Me</a></p>
 			<p><a href="#experiences">Past Experiences</a></p>
 			<p><a href="#hobbies">Hobbies</a></p>
-			<hr />
+			<hr style="width: 50%; border: 2px solid blueviolet;" />
 		</nav>
 	  
 	<section>
-		<article id="about">
+		<article class="border" id="about">
 			<h2><em>About Me</em></h2>
 			<img src="images/profile.jpg" alt="Portrait of Jonathan Dohrer" />
 			<p>Recent Graduate from <strong>Univeristy of Wisconsin - River Falls</strong> with an emphasis in Computer Science.</p>
@@ -37,7 +43,7 @@ Most Recent Revision: 1/3/2020
 			  which focused on teaching HTML!</p>
 		</article>
 		  
-		<article id="experiences">
+		<article id="experience">
 			<h2><em>Past Experiences</em></h2>
 			<img src="images/coding.jpg" alt="Image of someone writing code" />		  
 			<table>
@@ -103,7 +109,7 @@ Most Recent Revision: 1/3/2020
 		</article>
 	</section>
 	  
-	<footer>
+	<footer style="background-color: fuchsia">
 	<hr />
 	<p>&copy; 2020 Jonathan Dohrer. All rights reserved.</p>
 	</footer>
