@@ -111,6 +111,7 @@ nav a {
 	margin: 20px;
 	width: 100px;
 	float: left;
+	clear: both;
 }
 
 nav a:visited {
