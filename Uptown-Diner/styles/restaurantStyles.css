@@ -1,16 +1,19 @@
 /*
 Creator: Jonathan Dohrer
 Date Created: 1/7/2020
-Date Last Modified: 1/7/2020
+Date Last Modified: 1/8/2020
 */
 
 body {
 	
 }
+.mainContent {
+	background-color: beige;
+}
 
 header, footer {
 	background-color: khaki;
-	height: 100px;
+	height: 150px;
 	text-align: center;
 	padding: 30px 10px 30px 10px;
 	font-size: 1.5em;
@@ -21,6 +24,9 @@ h1 {
 }
 
 /*  Nav Styling  */
+nav .btn {
+	background-color: black;
+}
 nav a {
 	text-align: center;
 	display: block;
@@ -38,7 +44,11 @@ nav a:hover {
 }
 
 nav a:active {
-	text-decoration: none;
+	background-color: lightgray;
+}
+
+.icon {
+	font-size: 1.1em;
 }
 
 .clear-float {
