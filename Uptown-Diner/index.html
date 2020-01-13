@@ -24,20 +24,28 @@
 	</head>
 	<body>
 	<div class="container">
-		<header>
-			<h1 class="restaurantName">Uptown Diner</h1>
-		</header>
+		<div class="row">
+			<div class="col-lg-12">
+				<header>
+					<h1 class="restaurantName">Uptown Diner</h1>
+				</header>
+			</div>
+		</div>
 		
-		<nav>
-			<hr />
-				<p><a class="btn badge-pill" href="index.html">
-					<i class="icon octicon octicon-home" ></i>
-				</a></p>
-				<p><a class="btn badge-pill" href="menu.html">Menu</a></p>
-				<p><a class="btn badge-pill" href="contact.html">Contact Us</a></p>
-			<div class="clear-float"></div>
-			<hr />
-		</nav>
+		<div class="row">
+			<div class="col-lg-12">
+				<nav>
+					<hr />
+						<p><a class="btn badge-pill" href="index.html">
+							<i class="icon octicon octicon-home" ></i>
+						</a></p>
+						<p><a class="btn badge-pill" href="menu.html">Menu</a></p>
+						<p><a class="btn badge-pill" href="contact.html">Contact Us</a></p>
+					<div class="clear-float"></div>
+					<hr />
+				</nav>
+			</div>
+		</div>
 		
 		<!-- Jumbotron to Announce new Location! -->
 		<div class="row">
@@ -49,45 +57,57 @@
 		
 		<!-- Carousel -->
 		<!--IF no javascript show text rather than slides -->
-		<noscript>
-			<h2 style="text-align:center">JavaScript is not enabled; you are missing out on content!</h2>
-			<style type="text/css">
-				.carouselCont { display:none; }
-			</style>
-		</noscript>
-		<div class="carouselCont">
-			<span class="carousel">We're opening a new location!</span>
-			<span class="carousel">We're rolling out our seasonal menu, <br />with special options for this season.</span>
-			<span class="carousel">The Drink of the Month is SG Special Brew.</span>
-			<br />
-			<div id="carouselBtn">
-				<button class="btn badge-pill" onclick="carouselObj.next(3000);">Play</button>
-				<button class="btn badge-pill" onclick="carouselObj.stop();">Stop</button>
+		<div class="row">
+			<div class="col-lg-12">
+				<noscript>
+					<h2 style="text-align:center">JavaScript is not enabled; you are missing out on content!</h2>
+					<style type="text/css">
+						.carouselCont { display:none; }
+					</style>
+				</noscript>
+				<div class="carouselCont">
+					<span class="carousel">We're opening a new location!</span>
+					<span class="carousel">We're rolling out our seasonal menu, <br />with special options for this season.</span>
+					<span class="carousel">The Drink of the Month is SG Special Brew.</span>
+					<br />
+					<div id="carouselBtn">
+						<button class="btn badge-pill" onclick="carouselObj.next(3000);">Play</button>
+						<button class="btn badge-pill" onclick="carouselObj.stop();">Stop</button>
+					</div>
+				</div>
 			</div>
 		</div>
 		
 		<div class="mainContent">
 			<div class="row">
-				<figure style="margin: auto">
-					<img src="images/stools.jpg" alt="Images of stools in front of a bar" class="img-fluid" />
-					<br />
-				</figure>
+				<div class="col-lg-12">
+					<figure style="text-align: center">
+						<img src="images/stools.jpg" alt="Images of stools in front of a bar" class="img-fluid" />
+						<br />
+					</figure>
+				</div>
 			</div>
 			<div class="row">
-				<article class="mainDescription">
-					<p>Restaurant Description</p>
-					<p>Located on the upside of Ellsworth, Wicsonsin on Main Street. Come in and enjoy our menu of 
-					Classics all grilled fresh. Chips and fries made right in the restaurant. Enjoy sports events 
-					hosted on our 55 inch flat screen TVs! We are open during lunch and supper hours. 
-					</p>
-				</article>
+				<div class="col-lg-12">
+					<article class="mainDescription">
+						<p>Restaurant Description</p>
+						<p>Located on the upside of Ellsworth, Wicsonsin on Main Street. Come in and enjoy our menu of 
+						Classics all grilled fresh. Chips and fries made right in the restaurant. Enjoy sports events 
+						hosted on our 55 inch flat screen TVs! We are open during lunch and supper hours. 
+						</p>
+					</article>
+				</div>
 			</div>
 		</div>
 		
-		<footer>
-			<p>340 W Main, Ellsworth, WI, 54011</p>
-			<p>Phone: (715) 273-2600</p>
-		</footer>
+		<div class="row">
+			<div class="col-lg-12">
+				<footer>
+					<p>340 W Main, Ellsworth, WI, 54011</p>
+					<p>Phone: (715) 273-2600</p>
+				</footer>
+			</div>
+		</div>
 	</div>
 	<script type="text/JavaScript" src="scripts/carousel.js"></script>
 	<script>

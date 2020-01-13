@@ -15,16 +15,16 @@
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
 		<link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css" />
 		<style>
-				table {
+				.table {
 					background-color: beige;
-					width: 90%;
 					margin: auto;
 				}
 				tr {
 					text-align: center;
 				}
-				th {
-					font-size: 1.3em;
+				#colHeader {
+					font-weight: bold;
+					font-size: 1.4em;
 					padding-top: 20px;
 				}
 		</style>
@@ -37,124 +37,129 @@
 	</head>
 	<body>
 	<div class="container">
-		<header>
-			<h1 class="restaurantName">Uptown Diner</h1>
-		</header>
+		<div class="row">
+			<div class="col-lg-12">
+				<header>
+					<h1 class="restaurantName">Uptown Diner</h1>
+				</header>
+			</div>
+		</div>
 		
-		<nav>
-			<hr />
-				<p><a class="btn badge-pill" href="index.html">
-					<i class="icon octicon octicon-home" ></i>
-				</a></p>
-				<p><a class="btn badge-pill" href="menu.html">Menu</a></p>
-				<p><a class="btn badge-pill" href="contact.html">Contact Us</a></p>
-			<div class="clear-float"></div>
-			<hr />
-		</nav>
+		<div class="row">
+			<div class="col-lg-12">
+				<nav>
+					<hr />
+						<p><a class="btn badge-pill" href="index.html">
+							<i class="icon octicon octicon-home" ></i>
+						</a></p>
+						<p><a class="btn badge-pill" href="menu.html">Menu</a></p>
+						<p><a class="btn badge-pill" href="contact.html">Contact Us</a></p>
+					<div class="clear-float"></div>
+					<hr />
+				</nav>
+			</div>
+		</div>
 		
 		<article id="menu">
-		<div class="table-responsive">
-			<table width="100%">
-				<tr>
-					<th>Burger and Fries</th>
-					<th>Hot Dog and Chips</th>
-					<th>Italian Sausage and Peppers</th>
-				</tr>
-				<tr>
-					<td>An American Classic!</td>
-					<td>A Summer Classic!</td>
-					<td>An All-Time Favorite!</td>
-				</tr>
-				<tr>
-					<td>Your choice - with or without cheese</td>
-					<td>Your choice - white or wheat bun</td>
-					<td>Your choice - mild or spicy Cole Slaw</td>
-				</tr>
-				<tr>
-					<td>Pickle, onion, tomato, and lettuce</td>
-					<td>Relish, mustard, and ketchup</td>
-					<td>Served with garlic mashers</td>
-				</tr>
-				<tr>
-					<td>Served with our famous thick cut</td>
-					<td>Served with our house-made chips</td>
-					<td>$10.95</td>
-				</tr>
-				<tr>
-					<td>french fries</td>
-					<td>$7.95</td>
-					<td></td>
-				</tr>
-				<tr>
-					<td>$7.95</td>
-					<td></td>
-					<td></td>
-				</tr>
-				<tr>
-					<th>Tenderloin Sandwich and Chips</th>
-					<th>House Salad</th>
-					<th>Brisket Sandwich and Fries</th>
-				</tr>
-				<tr>
-					<td>Really Hits the Spot!</td>
-					<td>On the Lighter Side</td>
-					<td>A Taste of Texas</td>
-				</tr>
-				<tr>
-					<td>Plain or Sesame Seed Bun</td>
-					<td>Your choice - with or without cheese</td>
-					<td>Smoked Brisket on thick-cut</td>
-				</tr>
-				<tr>
-					<td>Pickle, onion, tomato, and lettuce</td>
-					<td>Iceberg lettuce, tomatoes, peppers</td>
-					<td>Texas Toast</td>
-				</tr>
-				<tr>
-					<td>Served with our house-made chips</td>
-					<td>Thousand Island or Ranch</td>
-					<td>Cole Slaw</td>
-				</tr>
-				<tr>
-					<td>$8.95</td>
-					<td>Dressing Served with a dinner roll</td>
-					<td>Served with our famous thick-cut</td>
-				</tr>
-				<tr>
-					<td></td>
-					<td>$6.95</td>
-					<td>french fries</td>
-				</tr>
-				<tr>
-					<td></td>
-					<td></td>
-					<td>$7.95</td>
-				</tr>
-			</table>
-		</div>
-		<div class="table-responsive">
-			<table width="100%">
-				 <tr>
-					<th>Beverages</th>
-				 </tr>
-				 <tr>
-					<td>Root Beer</td>
-					<td>$3.00</td>
-				 </tr>
-				 <tr>
-					<td>Bottled Water</td>
-					<td>$1.25</td>
-				 </tr>
-				 <tr>
-					<td>Lemonade</td>
-					<td>$1.00</td>
-				 </tr>
-				 <tr>
-					<td>Iced Tea</td>
-					<td>$1.25</td>
-				 </tr>
-			</table>
-		</div>
+<div class="table-responsive">
+	<table class="table">
+	<tbody>
+		<tr>
+			<td>
+			<div class="row">
+				<div class="col-lg-12 col-sm-12" id="colHeader">Burger and Fries</div>
+				<div class="col-lg-12">An American Classic!</div>
+				<div class="col-lg-12">Your choice - with or without cheese</div>
+				<div class="col-lg-12">Pickle, onion, tomato, and lettuce</div>
+				<div class="col-lg-12">Served with our famous thick cut</div>
+				<div class="col-lg-12">french fries</div>
+				<div class="col-lg-12">$7.95</div>
+			</div>
+			</td>
+			<td>
+				<div class="row">
+					<div class="col-lg-12" id="colHeader">Hot Dog and Chips</div>
+					<div class="col-lg-12">A Summer Classic!</div>
+					<div class="col-lg-12">Your choice - white or wheat bun</div>               
+					<div class="col-lg-12">Relish, mustard, and ketchup</div>
+					<div class="col-lg-12">Served with our house-made chips</div>
+					<div class="col-lg-12">$7.95</div>
+				</div>   
+			</td>
+			<td>
+				<div class="row">
+					<div class="col-lg-12" id="colHeader">Italian Sausage and Peppers</div>
+					<div class="col-lg-12">An All-Time Favorite!</div>
+					<div class="col-lg-12">Your choice - mild or spicy Cole Slaw</div>               
+					<div class="col-lg-12">Served with garlic mashers</div>
+					<div class="col-lg-12">$10.95</div>
+					<div class="col-lg-12"></div>
+				</div>   
+			</td>
+			</tr>
+		<tr>
+				<td>
+					<div class="row">
+						<div class="col-lg-12" id="colHeader">Tenderloin Sandwich and Chips</div>
+						<div class="col-lg-12">Really Hits the Spot!</div>
+						<div class="col-lg-12">Plain or Sesame Seed Bun</div>
+						<div class="col-lg-12">Pickle, onion, tomato, and lettuce</div>
+						<div class="col-lg-12">Served with our house-made chips</div>
+						<div class="col-lg-12">$8.95</div>
+						<div class="col-lg-12"></div>
+					</div>
+				</td>
+				<td>
+					<div class="row">
+						<div class="col-lg-12" id="colHeader">House Salad</div>
+						<div class="col-lg-12">On the Lighter Side</div>
+						<div class="col-lg-12">Your choice - with or without cheese</div>               
+						<div class="col-lg-12">Iceberg lettuce, tomatoes, peppers</div>
+						<div class="col-lg-12">Thousand Island or Ranch</div>
+						<div class="col-lg-12">Dressing Served with a dinner roll</div>
+						<div class="col-lg-12">$6.95	</div>
+					</div>   
+				</td>
+				<td>
+					<div class="row">
+						<div class="col-lg-12" id="colHeader">Brisket Sandwich and Fries</div>
+						<div class="col-lg-12">A Taste of Texas</div>
+						<div class="col-lg-12">Smoked Brisket on thick-cut</div>               
+						<div class="col-lg-12">Texas Toast</div>
+						<div class="col-lg-12">Cole Slaw</div>
+						<div class="col-lg-12">Served with our famous thick-cut</div>
+						<div class="col-lg-12">french fries</div>
+						<div class="col-lg-12">$7.95</div>
+					</div>   
+				</td>
+		</tr>
+		<tr>
+			<td>
+				<div class="row">
+					<div class="col-lg-12" id="colHeader">Beverages:</div>
+				</div>
+			</td>
+		 	<td>
+				<div class="row">
+					<div class="col-lg-12">Root Beer</div>
+					<div class="col-lg-12">Bottled Water</div>
+					<div class="col-lg-12">Lemonade</div>               
+					<div class="col-lg-12">Iced Tea</div>
+				</div>
+			</td>
+			<td>
+				<div class="row">
+					<div class="col-lg-12"></div>
+					<div class="col-lg-12">$3.00</div>
+					<div class="col-lg-12">$1.25</div>
+					<div class="col-lg-12">$1.00</div>
+					<div class="col-lg-12">$1.25</div>
+				</div>   
+			</td>
+		</tr>
+	</tbody>
+	</table>
+</div>
 		</article>
 		
 		<footer>
