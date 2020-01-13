@@ -4,11 +4,26 @@ Date Created: 1/7/2020
 Date Last Modified: 1/8/2020
 */
 
-body {
-	
+.restaurantName {
+	font-family: arial, helvetica, sans-serif;
 }
+
 .mainContent {
 	background-color: beige;
+	width: 100%;
+}
+
+.mainDescription {
+	margin: 0 auto;
+	width: 80%;
+}
+
+.icon {
+	font-size: 1.1em;
+}
+
+.clear-float {
+	clear:both;
 }
 
 header, footer {
@@ -28,6 +43,8 @@ nav .btn {
 	background-color: black;
 }
 nav a {
+	color: white;
+	text-decoration: underline;
 	text-align: center;
 	display: block;
 	margin: 10px;
@@ -45,12 +62,31 @@ nav a:hover {
 
 nav a:active {
 	background-color: lightgray;
+	text-decoration: none;
 }
 
-.icon {
-	font-size: 1.1em;
+/*  Carousel Styling  */
+.carouselCont {
+	background-color: #edbb99;
+	width: 100%;
+	border-bottom: 2px dashed black;
+	border-right: 2px dashed black;
+	border-left: 2px dashed black;
+	margin: 0 0 10px 0;
 }
 
-.clear-float {
-	clear:both;
+.carousel {
+	border-top: 2px dashed black;
+	background-color: #edbb99;
+	height: 150px;
+	width: 100%;
+	font-size: 1.5em;
+	text-align: center;	
+	padding: 30px 10px;
+	margin: auto;
+}
+
+#carouselBtn {
+	padding: 15px;
+	text-align: center;
 }

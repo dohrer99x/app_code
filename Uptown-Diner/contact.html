@@ -37,7 +37,7 @@
 			
 			input[type=checkbox], input[type=radio]{
 				padding: 8px 8px;
-				margin: 12px;
+				margin: 8px;
 			}
 
 			fieldset {
@@ -74,11 +74,17 @@
 				resize: none;
 			}
 		</style>
+		
+		<noscript> <!--If javascript is disabled; let the viewer know it is best to have enabled-->
+			<div class="error message">
+				JavaScript is <b>disabled! </b> This site is best viewed with it <i>enabled.</i>
+			</div>    
+		</noscript>
 	</head>
 	<body>
 	<div class="container">
 		<header>
-			<h1>Uptown Diner</h1>
+			<h1 class="restaurantName">Uptown Diner</h1>
 		</header>
 		
 		<nav>
@@ -92,60 +98,97 @@
 			<hr />
 		</nav>
 		
-		<form action="" method="POST">
-		<div class="form-group">
-		<table>
-			<tr>
-				<td align="right"><label for="name">Name:</label></td>
-				<td><input type="text" id="name" name="name"><br /></td>
-			</tr>
-			<tr>
-				<td align="right"><label for="email">Email:</label></td>
-				<td><input type="text" id="email" name="email"><br /></td>
-			</tr>
-			<tr>
-				<td align="right"><label for="phone">Phone:</label></td>
-				<td><input type="text" id="phone" name="phone"><br /><td>
-			</tr>
-			<tr>
-				<td align="right"><label for="reason">Reason for Inquiry:</label></td>
-				<td><select class="select" id="reason" name="reason">
-					<option value="catering" selected>Catering</option>
-					<option value="party">Private Party</option>
-					<option value="feedback">Feedback</option>
-					<option value="other">Other</option>
-				</select><br /></td>
-			</tr>
-			<tr>
-				<td align="right"><label for="info">Additional Information:</label></td>
-				<td><textarea id="info" name="info"></textarea> <br /></td>
-			</tr>
-			<tr>
-				<td align="right"><label for="visited">Have you been to the restaurant?</label></td>
-				<td><input type="radio" id="no" name="visited" value="no" checked="checked">
-				<label for="no">No</label>
-				<input type="radio" id="yes" name="visited" value="yes">
-				<label for="yes">Yes</label><br /></td>
-			</tr>
-			<tr>
-				<td align="right"><label for="bestContact">Best days to contact you:</label></td>
-				<td><input type="checkbox" id="m" name="bestContact" value="monday">
-				<label for="m">M</label>
-				<input type="checkbox" id="t" name="bestContact" value="tuesday">
-				<label for="t">T</label>
-				<input type="checkbox" id="w" name="bestContact" value="wednesday">
-				<label for="w">W</label>
-				<input type="checkbox" id="th" name="bestContact" value="thursday">
-				<label for="th">Th</label>
-				<input type="checkbox" id="f" name="bestContact" value="friday">
-				<label for="f">F</label><br /></td>
-			</tr>
-			<tr >
-				<td></td>
-				<td><button type="submit" class="btn btn-primary">Submit</button></td>
-			</tr>
-		</table>
-		</div>
+		<noscript>
+			<h2 style="text-align:center">JavaScript is not enabled; you will not be able to submit this form!</h2>
+		</noscript>
+		<form name="contactForm" onsubmit="validateForm();">
+				<table>
+					<caption>Items in <b>bold</b> are required!</caption>
+					<div class="form-group">
+						<tr>
+							<td align="right"><label for="name"><b>Name:</b></label></td>
+							<td><input type="text" id="name" name="name"><br /></td>
+						</tr>
+					</div>
+					<div class="form-group">
+						<tr>
+							<td align="right"><label for="email"><b>Email:</b></label></td>
+							<td><input type="text" id="email" name="email" placeholder="name@example.com"><br /></td>
+						</tr>
+					</div>
+					<div class="form-group">
+						<tr>
+							<td align="right"><label for="phone"><b>Phone:</b></label></td>
+							<td><input type="text" id="phone" name="phone"><br /><td>
+						</tr>
+					</div>
+					<div class="form-group">
+						<tr>
+							<td align="right"><label for="reason">Reason for Inquiry:</label></td>
+							<td><select class="select mbd-select md-form" id="reason" name="reason">
+								<option value="catering" selected>Catering</option>
+								<option value="party">Private Party</option>
+								<option value="feedback">Feedback</option>
+								<option value="other">Other</option>
+							</select><br /></td>
+						</tr>
+					</div>
+					<div class="form-group">
+						<tr>
+							<td align="right"><label for="info"><b>Additional Information:</b></label></td>
+							<td><textarea class="form-control rounded-0" rows="8" id="info" name="info" placeholder="Please enter a brief description..."></textarea></td>
+						</tr>
+					</div>
+					<div class="form-group">
+						<tr>
+							<td align="right">
+								<label for="visited">Have you been to the restaurant?</label></td>
+							<td>
+								<div class="custom-control custom-radio custom-control-inline">
+								<input type="radio" id="no" name="visited" value="no" checked="checked">
+								<label for="no">No</label>
+								</div>
+								<div class="custom-control custom-radio custom-control-inline">
+								<input type="radio" id="yes" name="visited" value="yes">
+								<label for="yes">Yes</label>
+								<div>
+							</td>
+						</tr>
+					</div>
+					<div class="form-group">
+						<tr>
+							<td align="right">
+								<label for="bestContact"><b>Best days to contact you:</b></label>
+							</td>
+							<td>
+								<div class="custom-control-inline">
+								<input type="checkbox" id="m" name="bestContact" value="monday">
+								<label for="m" class="form-check-label">M</label>
+								</div>
+								<div class="custom-control-inline">
+								<input type="checkbox" id="t" name="bestContact" value="tuesday">
+								<label for="t">T</label>
+								</div>
+								<div class="custom-control-inline">
+								<input type="checkbox" id="w" name="bestContact" value="wednesday">
+								<label for="w">W</label>
+								</div>
+								<div class="custom-control-inline">
+								<input type="checkbox" id="th" name="bestContact" value="thursday">
+								<label for="th">Th</label>
+								</div>
+								<div class="custom-control-inline">
+								<input type="checkbox" id="f" name="bestContact" value="friday">
+								<label for="f">F</label>
+								</div>
+							</td>
+						</tr>
+					</div>
+						<tr >
+							<td></td>
+							<td><button type="submit" id="submitButton" class="btn btn-default">Submit</button></td>
+						</tr>
+				</table>
 		</form>
 		
 		<footer>
@@ -153,5 +196,7 @@
 			<p>Phone: (715) 273-2600</p>
 		</footer>
 	</div>
+	<script type="text/JavaScript" src="scripts/validation.js"></script>
+	<script type="text/JavaScript" src="scripts/test.js"></script>
 	</body>
 </html>

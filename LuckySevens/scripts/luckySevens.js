@@ -1,7 +1,7 @@
 /*
 *Created By: Jonathan Dohrer
 *Date Created: 1/9/2020
-*Date Last Modified: 1/10/2020
+*Date Last Modified: 1/13/2020
 */
 
 function rollDice() {
@@ -10,9 +10,9 @@ function rollDice() {
 
 function playGame(startingBet) {
 	var gameMoney = startingBet;
-	var totalRolls = 0;
-	var highestAmt = 0;
+	var highestAmt = startingBet;
 	var highestAmtRoll = 0;
+	var totalRolls = 0;
 	var gameOver = false;
 	
 	var dice1 = 0;
@@ -53,13 +53,6 @@ function clearErrors() {
 			document.forms["luckySevens"].elements[loopCounter].parentElement.className = "form-group";
 		}
 	}
-}
-
-function resetForm() {
-	clearErrors();
-	document.forms["luckySevens"]["Bet"].value = "";
-	document.getElementById("results").style.display = "none";
-	document.forms["luckySevens"]["Bet"].focus();;
 }
 
 function validateForm() {
