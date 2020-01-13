@@ -48,7 +48,3 @@ function validateForm() {
 		return false;
 	}
 }
-
-function testVal() {
-	alert("Connected to JS validation file!");
-}
